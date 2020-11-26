@@ -6,14 +6,13 @@
 \____/ \__,_| \_/ \__,_|
                         
 =============================================
-					Indice
-
+                Indice 
 1. Tipos de datos
 2. Variables y constantes
 3. Comentarios
 4. Operadores básicos
 =============================================
-				Tipos de datos
+                Tipos de datos
 
 Tipos primitivos:
 	
@@ -27,8 +26,8 @@ Tipos primitivos:
 		- bool			-char
 
 =============================================
-		  Variables y constantes
-				(syntax)
+            Variables y constantes
+                    (syntax)
 
 Variables:
 	
@@ -43,7 +42,7 @@ Constantes:
 	final int y = 100;
 
 =============================================
-				Comentarios
+                Comentarios
 
 Una linea:
 	// Comentario
@@ -53,18 +52,20 @@ Una linea:
 		otro comentario */
 
 =============================================
-				Operadores
+                Operadores
 
 Aritmeticos			Logicos,booleanos
 	- "+"				- "<"
 	- "-"				- ">"
 	- "*"				- "!="
 	- "/"				- "=="
-						- "&&"
-						- "||"
+    					- "&&"
+    					- "||"
 
 Incremento			Concatenación
 	- "++"				- "+"
 	- "--"
 	- "+="
 	- "-="
+
+
