@@ -5,13 +5,13 @@
 /\__/ / (_| |\ V / (_| |
 \____/ \__,_| \_/ \__,_|
                         
-=============================================
+=========================================================
                 Indice 
 1. Tipos de datos
 2. Variables y constantes
 3. Comentarios
 4. Operadores básicos
-=============================================
+=========================================================
                 Tipos de datos
 
 Tipos primitivos:
@@ -25,7 +25,7 @@ Tipos primitivos:
 	Boleanos		Char
 		- bool			-char
 
-=============================================
+=========================================================
             Variables y constantes
                     (syntax)
 
@@ -41,7 +41,7 @@ Constantes:
 	ej:
 	final int y = 100;
 
-=============================================
+========================================================
                 Comentarios
 
 Una linea:
@@ -51,7 +51,7 @@ Una linea:
 	/* Comentario
 		otro comentario */
 
-=============================================
+========================================================
                 Operadores
 
 Aritmeticos			Logicos,booleanos
@@ -68,4 +68,52 @@ Incremento			Concatenación
 	- "+="
 	- "-="
 
+========================================================
+			Importar paquetes
 
+Sintaxis:
+	import <nombrePaquete>.<nombreClase>;
+
+Si se quiere importar todas las clases de un paquete:
+
+	import <nombrePaquete>*;
+
+Por defecto siempre se importa el paquete java.lang;
+
+========================================================
+			Input y output
+			   (consola)
+
+Para ingresar valores se puede usar metodos de las
+clases "javax.util.scanner" y "javas.swing.JOptionPane"
+
+SCANNER:
+        Syntaxis:
+            Scanner input = new Scanner(System.in);
+            <tipo> variable = input.next<tipo>();
+
+            ej:
+            Scanner input = new Scanner(System.in);
+            String x = input.nextLine();
+
+        Con la clase "scanner" al poseer funciones no staticas
+        hay que instansiarla. Sus métodos "next.<tipo>" pueden
+        devolver valores de diferente tipo primitivo:
+        .__________________________________________.
+        | MÉTODO         | REGRESA VALOR...        |
+        | nextBoolean()  | bool                    |
+        | nextByte()     | byte                    |
+        | nextDouble()   | double                  |
+        | nextFloat()    | float                   |
+        | nextInt()      | int                     |
+        | nextLine()     | String                  |
+        | nextLong()     | long                    |
+        | nextShort()    | short                   |
+        .------------------------------------------.
+
+JOptionPane:
+        Syntaxis:
+            String x = JOptionPane.ShowInputDialog("texto para mostrar");
+        
+        JOptionPane muestra una ventana grafica para introducir un valor
+        y regresa el valor introducido de tipo String.
