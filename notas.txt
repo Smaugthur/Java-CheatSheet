@@ -69,6 +69,94 @@ Incremento			Concatenación
 	- "-="
 
 ========================================================
+                Condicionales
+
+IF,ELSE IF, ELSE:
+
+    Sintaxis:
+        if(condicion)
+        {
+            código;
+        }
+        else if (condicion)
+        {
+            código;
+        }
+        else
+        {
+            código;
+        }
+
+SWITCH:
+    
+    switch(valor)
+    {
+        case <valor>:
+            código;
+            break;
+
+        case <valor>:
+            código;
+            break;
+
+        default:
+            código;
+    }
+
+    "default" se ejecuta si los otros casos no coinciden.
+
+========================================================
+                       Bucles
+FOR:
+    for(variable;condición;incremento/decremento)
+    {
+        código;
+    }
+
+    ej:
+    for(int i=0;i<10;i++)
+    {
+        código;
+    }
+
+WHILE:
+    while(condición)
+    {
+        código;
+    }
+    ej:
+    while(i<2)
+    {
+        código;
+    }
+
+FOREACH:
+    foreach(<variable> in <array>)
+    {
+        código;
+    }
+
+    ex:
+    foreach(int i in listaNumeros)
+    {
+        código;
+    }
+========================================================
+                       Arrays
+Sintaxis:
+    // Array que guarda 5 elementos.
+    <tipo>[] nombre = new <tipo>[5];
+
+    // Array que guarda elementos "1,2,3,4"
+    <tipo>[] nombre = {1,2,3,4};
+
+    // Array bidimensional de 5 arrays con 5 elementos cada uno.
+    <tipo>[][] nombre = new <tipo>[5][5];
+
+    // Añadir valor al indice x de un array.
+    NombreArray[indice] = <valor>;
+
+========================================================
 			Importar paquetes
 
 Sintaxis:
@@ -117,3 +205,4 @@ JOptionPane:
         
         JOptionPane muestra una ventana grafica para introducir un valor
         y regresa el valor introducido de tipo String.
+
