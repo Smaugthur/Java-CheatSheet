@@ -6,14 +6,13 @@
 \____/ \__,_| \_/ \__,_|
                         
 =========================================================
-                Indice 
+                   INDICE 
 1. Tipos de datos
 2. Variables y constantes
 3. Comentarios
 4. Operadores básicos
 =========================================================
-                Tipos de datos
-
+                TIPOS DE DATOS 
 Tipos primitivos:
 	
 	Enteros			Flotantes
@@ -26,8 +25,8 @@ Tipos primitivos:
 		- bool			-char
 
 =========================================================
-            Variables y constantes
-                    (syntax)
+                VARIABLES Y CONSTANTES
+                        (syntax)
 
 Variables:
 	
@@ -42,7 +41,7 @@ Constantes:
 	final int y = 100;
 
 ========================================================
-                Comentarios
+                   COMENTARIOS
 
 Una linea:
 	// Comentario
@@ -52,7 +51,7 @@ Una linea:
 		otro comentario */
 
 ========================================================
-                Operadores
+                   OPERADORES
 
 Aritmeticos			Logicos,booleanos
 	- "+"				- "<"
@@ -69,7 +68,7 @@ Incremento			Concatenación
 	- "-="
 
 ========================================================
-                Condicionales
+                    CONDICIONALES
 
 IF,ELSE IF, ELSE:
 
@@ -106,7 +105,7 @@ SWITCH:
     "default" se ejecuta si los otros casos no coinciden.
 
 ========================================================
-                       Bucles
+                      BUCLES 
 FOR:
     for(variable;condición;incremento/decremento)
     {
@@ -136,13 +135,13 @@ FOREACH:
         código;
     }
 
-    ex:
+    ej:
     foreach(int i in listaNumeros)
     {
         código;
     }
 ========================================================
-                       Arrays
+                       ARRAYS
 Sintaxis:
     // Array que guarda 5 elementos.
     <tipo>[] nombre = new <tipo>[5];
@@ -157,20 +156,103 @@ Sintaxis:
     NombreArray[indice] = <valor>;
 
 ========================================================
-			Importar paquetes
+                    CLASES
+Sintaxis:
+    class <nombre>
+    {
+
+    }
+
+    En un archivo solo puede haber solo 1 clase "publica"
+    y esa clase debe tener el nombre del archivo.
+                        
+               CLASES ABSTRACTAS
+
+Son clases que contienen metodos sin desarrolar, y que las
+clases que los hereden estan obligadas a desarrolar.
 
 Sintaxis:
-	import <nombrePaquete>.<nombreClase>;
-
-Si se quiere importar todas las clases de un paquete:
-
-	import <nombrePaquete>*;
-
-Por defecto siempre se importa el paquete java.lang;
+    abstract class
+    {
+        // código
+    }
 
 ========================================================
-			Input y output
-			   (consola)
+                MODIFICADORES DE ACCESO
+
++------------------------------------------+
+| Modificador| clase|package|subclase|todos|
+| public     |  si  |  si   |  si    | si  |
+| protected  |  si  |  si   |  si    | no  |
+| private    |  si  |  no   |  no    | no  |
+| default    |  si  |  si   |  no    | no  |
++------------+------+-------+--------+-----+
+
+========================================================
+                    CONSTRUCTORES
+
+Usa la palabra reservada "super" para llamar al constructor
+de la clase padre.
+
+Sintaxis:
+
+    class A
+    {
+        public void A(){};
+    }
+
+    class B extends A
+    {
+        super(); // heredar constructor de A.
+    }
+
+========================================================
+			        PAQUETES
+
+IMPORTAR PAQUETES:
+
+    Sintaxis:
+        import <nombrePaquete>.<nombreClase>;
+
+    Si se quiere importar todas las clases de un paquete:
+
+        import <nombrePaquete>.*;
+
+    Por defecto siempre se importa el paquete java.lang;
+
+CREAR PAQUETES:
+    Uso de la palabra "package" junto al <nombrePaquete>
+    al que pertenece al principio del documento. Solo se
+    puede usar una vez por archivo.
+
+    Sintaxis:
+        package <nombrePaquete>;
+
+    Compilar:
+        javac -d <directorio> archivo.java
+
+=========================================================
+                     HERENCIA
+
+Uso de la palabra reservada "extends"
+
+Sintaxis:
+
+    class A
+    {
+        // código
+    }
+
+    class B extends A
+    {
+        // código
+    }
+
+NOTA: no es posible la herencia de multiples clases, pero si
+      de multiples interfaces.
+=======================================================
+                    INPUT Y OUTPUT
+                       (consola)
 
 Para ingresar valores se puede usar metodos de las
 clases "javax.util.scanner" y "javas.swing.JOptionPane"
@@ -205,4 +287,5 @@ JOptionPane:
         
         JOptionPane muestra una ventana grafica para introducir un valor
         y regresa el valor introducido de tipo String.
+
 
